@@ -5,3 +5,10 @@
   justify-content: center;
   text-align: center;
 }
+
+.app-header {
+  background-color: #0a1d34;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 20px;
+}
