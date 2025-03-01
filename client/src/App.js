@@ -9,11 +9,11 @@ function App() {
       <header className="app-header">
         <h1>Library App</h1>
       </header>
-      <main>
-        <div>
+      <main className="app-main">
+        <div className="app-left-column">
           <BookForm />
         </div>
-        <div>
+        <div className="app-right-column">
           <Filter />
           <Booklist />
         </div>
