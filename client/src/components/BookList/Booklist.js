@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import React from "react";
 
-const Booklist = () => {
+const BookList = () => {
   const books = useSelector((state) => state.books);
   return (
     <div className="app-block">
@@ -23,4 +23,4 @@ const Booklist = () => {
   );
 };
 
-export default Booklist;
+export default BookList;

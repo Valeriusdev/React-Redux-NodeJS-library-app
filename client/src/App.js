@@ -1,4 +1,4 @@
-import Booklist from "./components/BookList/Booklist";
+import BookList from "./components/BookList/Booklist";
 import BookForm from "./components/BookForm/BookForm";
 import Filter from "./components/Filter/Filter";
 import "./App.css";
@@ -15,7 +15,7 @@ function App() {
         </div>
         <div className="app-right-column">
           <Filter />
-          <Booklist />
+          <BookList />
         </div>
       </main>
     </div>
