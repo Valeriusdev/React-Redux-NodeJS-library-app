@@ -13,7 +13,7 @@ const BookList = () => {
           {books.map((book, i) => (
             <li key={i}>
               <div>
-                {book.title} by <strong>{book.author}</strong>
+                {++i}. {book.title} by <strong>{book.author}</strong>
               </div>
             </li>
           ))}
