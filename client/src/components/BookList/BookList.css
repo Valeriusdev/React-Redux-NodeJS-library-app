@@ -1,0 +1,26 @@
+.book-list ul {
+    padding: 0;
+    margin: 25px;
+    list-style: none;
+}
+
+.book-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    list-style-type: none;
+}
+
+.book-list .book-info {
+    flex: 1;
+    text-align: left;
+}
+
+.book-list .book-actions {
+    display: flex;
+    align-items: center;
+}
