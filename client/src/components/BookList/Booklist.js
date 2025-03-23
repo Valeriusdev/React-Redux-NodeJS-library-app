@@ -4,6 +4,11 @@ import "./BookList.css";
 
 const BookList = () => {
   const books = useSelector((state) => state.books);
+
+  const handleDeleteBook = (id) => {
+    console.log(id);
+  };
+
   return (
     <div className="app-block book-list">
       <h2>Book list</h2>
@@ -17,7 +22,9 @@ const BookList = () => {
                 {++i}. {book.title} by <strong>{book.author}</strong>
               </div>
               <div className="book-actions">
-                <button>Delete</button>
+                <button onClick={() => handleDeleteBook(book.id)}>
+                  Delete
+                </button>
               </div>
             </li>
           ))}
