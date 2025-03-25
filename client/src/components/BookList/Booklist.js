@@ -1,12 +1,14 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { deleteBook } from "../../redux/books/actionCreators";
 import React from "react";
 import "./BookList.css";
 
 const BookList = () => {
   const books = useSelector((state) => state.books);
+  const dispatch = useDispatch();
 
   const handleDeleteBook = (id) => {
-    console.log(id);
+    dispatch(deleteBook(id));
   };
 
   return (
