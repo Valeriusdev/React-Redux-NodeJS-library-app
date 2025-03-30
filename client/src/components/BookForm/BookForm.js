@@ -49,6 +49,7 @@ const BookForm = () => {
           />
         </div>
         <button type="submit">Add Book</button>
+        <button type="button">Add Random</button>
       </form>
     </div>
   );
