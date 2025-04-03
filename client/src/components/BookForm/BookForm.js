@@ -17,6 +17,8 @@ const BookForm = () => {
       ...randomBook,
       id: uuidv4(),
     };
+
+    dispatch(addBook(randomBookWithID));
   };
 
   const handleSubmit = (e) => {
