@@ -15,6 +15,10 @@
     list-style-type: none;
 }
 
+.book-list li:nth-child(even) {
+    background-color: #eadfdf;
+}
+
 .book-list .book-info {
     flex: 1;
     text-align: left;
