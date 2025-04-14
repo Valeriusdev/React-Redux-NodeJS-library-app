@@ -15,7 +15,7 @@ const BookList = () => {
   return (
     <div className="app-block book-list">
       <h2>Book list</h2>
-      {books.lenght === 0 ? (
+      {books.length === 0 ? (
         <p>No books available</p>
       ) : (
         <ul>
