@@ -12,6 +12,10 @@ const BookList = () => {
     dispatch(deleteBook(id));
   };
 
+  const handleToggleFavorite = (id) => {
+    dispatch(toggleFavorite(id));
+  }
+
   return (
     <div className="app-block book-list">
       <h2>Book list</h2>
