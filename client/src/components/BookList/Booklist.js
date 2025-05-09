@@ -14,7 +14,7 @@ const BookList = () => {
 
   const handleToggleFavorite = (id) => {
     dispatch(toggleFavorite(id));
-  }
+  };
 
   return (
     <div className="app-block book-list">
@@ -29,11 +29,13 @@ const BookList = () => {
                 {++i}. {book.title} by <strong>{book.author}</strong>
               </div>
               <div className="book-actions">
-                {book.isFavorite ? (
-                  <BsBookmarkStarFill className="star-icon" />
-                ) : (                
-                  <BsBookmarkStar className="star-icon" />
-                )}
+                <span>
+                  {book.isFavorite ? (
+                    <BsBookmarkStarFill className="star-icon" />
+                  ) : (
+                    <BsBookmarkStar className="star-icon" />
+                  )}
+                </span>
                 <button onClick={() => handleDeleteBook(book.id)}>
                   Delete
                 </button>
