@@ -22,12 +22,7 @@ const BookForm = () => {
     e.preventDefault();
 
     if (title && author) {
-      const book = {
-        title: title,
-        author: author,
-        id: uuidv4(),
-        isFavorite: false,
-      };
+      const book = { title, author };
 
       dispatch(addBook(book));
 
