@@ -22,9 +22,7 @@ const BookForm = () => {
     e.preventDefault();
 
     if (title && author) {
-      const book = createBookWithID({ title, author });
-
-      dispatch(addBook(book));
+      dispatch(addBook(createBookWithID({ title, author })));
 
       setTitle("");
       setAuthor("");
