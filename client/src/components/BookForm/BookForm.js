@@ -22,9 +22,10 @@ const BookForm = () => {
     e.preventDefault();
 
     if (title && author) {
-      dispatch(addBook(createBookWithID({ title, author })));
+      // Create book with ID from form data and add to store
+      dispatch(addBook(createBookWithID({ title, author }))); 
 
-      setTitle("");
+      setTitle(""); 
       setAuthor("");
     }
   };
