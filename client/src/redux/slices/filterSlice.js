@@ -6,4 +6,5 @@ const initialState = {
 
 const filterSlice = createSlice({
   name: "filter",
+  initialState: initialState
 })
